@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel - Rastreio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Bem-vindo ao Painel</h2>
+    
+    <p id="userEmail"></p>
+    
+   <form id="consultaForm">
+  <input type="text" id="codigoRastreio" placeholder="Digite o código de rastreio" required>
+  <button type="submit">Consultar</button>
+</form>
+
+<!-- Aqui vai a mensagem -->
+<p id="mensagemErro" style="color: red; margin-top: 10px;"></p>
+
+    <h3>Histórico de Consultas</h3>
+    <ul id="historicoList"></ul>
+
+    <button id="logoutBtn" style="margin-top: 20px; background-color: crimson;">Sair</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
